@@ -1,0 +1,18 @@
+
+# Meeting menu items definition
+entity.meeting_entity.collection:
+  title: 'Meeting list'
+  route_name: entity.meeting_entity.collection
+  description: 'List Meeting entities'
+  parent: system.admin_structure
+  weight: 100
+
+
+# Meeting type menu items definition
+entity.meeting_entity_type.collection:
+  title: 'Meeting type'
+  route_name: entity.meeting_entity_type.collection
+  description: 'List Meeting type (bundles)'
+  parent: system.admin_structure
+  weight: 99
+

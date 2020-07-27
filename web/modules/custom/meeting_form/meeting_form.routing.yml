@@ -1,0 +1,21 @@
+meeting.meeting_add:
+  path: '/meeeting/form/meeting_add'
+  defaults:
+    _form: '\Drupal\meeting_form\Form\MeetingAdd'
+    _title: 'Meeting Add'
+  requirements:
+    _access: 'TRUE'
+meeting.meeting_edit:
+  path: '/meeting/form/meeting_edit/{id}'
+  defaults:
+    _form: '\Drupal\meeting_form\Form\MeetingEdit'
+    _title: 'Meeting Edit'
+  requirements:
+    _access: 'TRUE'
+meeting.meeting_delete:
+  path: '/meeting/meeting_delete/{id}'
+  defaults:
+    _controller: '\Drupal\meeting_form\Controller\MeetingDelete::meetingDelete'
+    _title: 'Meeting Delete'
+  requirements:
+    _access: 'TRUE'

@@ -1,0 +1,50 @@
+
+<div class="row">
+<div class="col-6 my-2">
+	<div class="form-group">
+		<label class="col-form-label with_text pt-0">Title</label>
+		<div class="p-0">
+			{{ form.title }}
+		</div>
+	</div>
+</div>
+<div class="col-6 my-2">
+	<div class="form-group">
+		<label class="col-form-label with_text pt-0">Start Date</label>
+		<div class=" p-0">
+			{{ form.start_date }}
+		</div>
+	</div>
+</div>
+
+<div class="col-6 my-2">
+	<div class="form-group">
+		<label class="col-form-label with_text pt-0">End Date</label>
+		<div class=" p-0">
+			{{ form.end_date }}
+		</div>
+	</div>
+</div>
+
+<div class="col-6 my-2">
+	<div class="form-group">
+		<label class="col-form-label with_text pt-0">Venue</label>
+		<div class=" p-0">
+			{{ form.venue }}
+		</div>
+	</div>
+</div>
+<div class="col-6 my-2">
+	<div class="form-group">
+		<label class="col-form-label with_text pt-0">Description</label>
+		<div class=" p-0">
+			{{ form.description }}
+		</div>
+	</div>
+</div>
+{{ form.form_build_id }} 
+{{ form.form_id }} 
+{{ form.form_token }}
+<div class="row justify-content-center custom-btn-container">
+	{{ form.submit }}	
+</div>

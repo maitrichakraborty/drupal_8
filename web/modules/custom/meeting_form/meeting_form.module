@@ -1,0 +1,44 @@
+<?php
+
+/**
+ * @file
+ * Contains meeting_form.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function meeting_form_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the orthodox_management module.
+    case 'help.page.meeting_form':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Meeting Management') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+/**
+ * Implements hook_theme().
+ */
+function meeting_form_theme($existing, $type, $theme, $path) {
+  return array (
+    'meeting_form' => array(
+      'render element' => 'form',
+    ),
+	'meeting_edit_form' => array(
+      'render element' => 'form',
+    )
+  );
+}
+/**
+ * Attach module specific JS file. 
+ */
+function meeting_form_page_attachments(array &$page){
+  
+  $page['#attached']['library'][] = 'meeting_form/custommeeting_js';
+}

@@ -1,0 +1,5 @@
+name: 'Meeting'
+type: module
+description: 'Meeting Details'
+core: 8.x
+package: 'Custom'

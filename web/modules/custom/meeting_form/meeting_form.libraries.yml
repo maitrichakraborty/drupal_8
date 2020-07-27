@@ -1,0 +1,8 @@
+custommeeting_js:
+    version: VERSION
+    
+    js:
+        js/meeting.js: {}
+  
+    dependencies:
+        - core/jquery

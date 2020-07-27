@@ -1,0 +1,5 @@
+name: 'Meeting management'
+type: module
+description: 'Meeting Management'
+core: 8.x
+package: 'Custom'

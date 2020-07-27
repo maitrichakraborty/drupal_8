@@ -1,0 +1,19 @@
+add meeting entities:
+  title: 'Create new Meeting entities'
+
+administer meeting entities:
+  title: 'Administer Meeting entities'
+  description: 'Allow to access the administration form to configure Meeting entities.'
+  restrict access: true
+
+delete meeting entities:
+  title: 'Delete Meeting entities'
+
+edit meeting entities:
+  title: 'Edit Meeting entities'
+
+view published meeting entities:
+  title: 'View published Meeting entities'
+
+view unpublished meeting entities:
+  title: 'View unpublished Meeting entities'
